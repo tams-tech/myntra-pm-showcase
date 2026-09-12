@@ -1,8 +1,5 @@
 # 🛍️ Myntra StyleGen & FitSense: AI-Powered Contextual Discovery & Fit-Confidence Engine
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
-[![Target Role](https://img.shields.io/badge/Target-Myntra%20PM%20Internship%202027-FF3F6C.svg)](https://myntra.com)
 
 > **"While engineering teaches you how to build, Product Management focuses on what to build and why."**  
 > *A comprehensive technical Product Management project and interactive working prototype built by Tamanna Singh Chandel (B.Tech Computer Engineering '27, VIT Bhopal).*
@@ -21,7 +18,7 @@ Fashion e-commerce platforms suffer from two chronic conversion and margin leaks
 
 ---
 
-## 🏗️ System Architecture & Product Flow
+##  System Architecture & Product Flow
 
 ```mermaid
 flowchart TD
