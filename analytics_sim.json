@@ -1,0 +1,88 @@
+{
+  "experiment_metadata": {
+    "experiment_id": "EXP-2027-STYLE-FIT-01",
+    "name": "Myntra StyleGen & FitSense Full-Funnel Impact Test",
+    "runtime_days": 14,
+    "sample_size_per_cell": 125000,
+    "primary_metrics": [
+      "Search-to-PDP CTR",
+      "Add-to-Cart Conversion",
+      "Order Conversion Rate",
+      "Apparel Return Rate (RTO)",
+      "Average Order Value (AOV)"
+    ]
+  },
+  "ab_test_results": {
+    "Control": {
+      "name": "Control (A) - Standard Keyword Search & Static Chart",
+      "sessions": 125000,
+      "pdp_clicks": 38750,
+      "ctr_pct": 31.0,
+      "add_to_cart": 9300,
+      "cart_rate_pct": 7.44,
+      "orders": 4650,
+      "conversion_rate_pct": 3.72,
+      "aov_inr": 1850,
+      "total_gmv_inr": 8602500,
+      "returns": 1502,
+      "return_rate_pct": 32.3,
+      "size_returns": 961,
+      "size_return_pct": 64.0
+    },
+    "Variant_B": {
+      "name": "Variant (B) - StyleGen Intent Search + Static Chart",
+      "sessions": 125000,
+      "pdp_clicks": 43500,
+      "ctr_pct": 34.8,
+      "add_to_cart": 11310,
+      "cart_rate_pct": 9.05,
+      "orders": 5375,
+      "conversion_rate_pct": 4.30,
+      "aov_inr": 2180,
+      "total_gmv_inr": 11717500,
+      "returns": 1693,
+      "return_rate_pct": 31.5,
+      "size_returns": 1050,
+      "size_return_pct": 62.0
+    },
+    "Variant_C": {
+      "name": "Variant (C) - StyleGen Intent Search + FitSense Widget",
+      "sessions": 125000,
+      "pdp_clicks": 44875,
+      "ctr_pct": 35.9,
+      "add_to_cart": 12565,
+      "cart_rate_pct": 10.05,
+      "orders": 5938,
+      "conversion_rate_pct": 4.75,
+      "aov_inr": 2240,
+      "total_gmv_inr": 13301120,
+      "returns": 1365,
+      "return_rate_pct": 23.0,
+      "size_returns": 491,
+      "size_return_pct": 36.0
+    }
+  },
+  "return_reasons_breakdown": [
+    { "reason": "Size too small / tight", "baseline_pct": 38.0, "fitsense_pct": 14.5, "delta": -23.5 },
+    { "reason": "Size too loose / large", "baseline_pct": 26.0, "fitsense_pct": 12.0, "delta": -14.0 },
+    { "reason": "Fabric / Quality issue", "baseline_pct": 16.0, "fitsense_pct": 15.5, "delta": -0.5 },
+    { "reason": "Color mismatch vs photo", "baseline_pct": 11.0, "fitsense_pct": 10.8, "delta": -0.2 },
+    { "reason": "Delayed delivery / Impulsive", "baseline_pct": 9.0, "fitsense_pct": 8.5, "delta": -0.5 }
+  ],
+  "brand_sizing_bias_matrix": {
+    "Roadster": { "bias": "Runs 1 Size Small", "delta_in": -1.2, "sample_purchases": 42000, "correction_rule": "Recommend +1 size up for standard chest fit" },
+    "Zara": { "bias": "True to Size (Tailored)", "delta_in": 0.0, "sample_purchases": 28000, "correction_rule": "Maintain benchmark sizing" },
+    "Mango": { "bias": "Runs 0.5 Size Small (Bust)", "delta_in": -0.8, "sample_purchases": 19000, "correction_rule": "Recommend sizing up if bust > 36in" },
+    "Anouk": { "bias": "Runs 1 Size Large (Relaxed)", "delta_in": 1.5, "sample_purchases": 31000, "correction_rule": "Recommend 1 size down for slim silhouette" },
+    "Vero Moda": { "bias": "Runs 0.8 Size Small", "delta_in": -0.8, "sample_purchases": 16500, "correction_rule": "Recommend waist +1 size for comfort" },
+    "Marks & Spencer": { "bias": "Runs 1.5 Size Large", "delta_in": 2.0, "sample_purchases": 14000, "correction_rule": "Recommend size down unless seeking oversized drape" },
+    "W for Woman": { "bias": "True to Size", "delta_in": 0.0, "sample_purchases": 22000, "correction_rule": "Standard benchmark sizing" },
+    "HRX": { "bias": "Athletic Snug Fit", "delta_in": -0.5, "sample_purchases": 51000, "correction_rule": "True to size for compression, +1 size for casual" }
+  },
+  "zero_result_query_logs": [
+    { "query": "outdoor sunset cocktail saree look", "volume_last_7d": 4200, "suggested_action": "Map to Festive/Cocktail Fusion Sets + Metallic Heels" },
+    { "query": "oversized aesthetic vintage leather jacket", "volume_last_7d": 3890, "suggested_action": "Bundle Wrogn Bomber + Levi's 511 + White Sneakers" },
+    { "query": "corporate keynote speaker formal dress women", "volume_last_7d": 2750, "suggested_action": "Map to Vero Moda Beige Trousers + M&S Shirt + Tan Tote" },
+    { "query": "beach sangeet pastel kurta for brother of bride", "volume_last_7d": 3140, "suggested_action": "Bundle Anouk Maroon Kurta Set + Linen Blazer" }
+  ]
+}
